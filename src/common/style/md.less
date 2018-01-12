@@ -1,0 +1,95 @@
+// pc
+//@media screen and (min-width: 992px) and (max-width: 1199px){
+//
+//}
+
+@media screen and (min-width: 992px) {
+  // container
+  .container {
+
+    // left
+    > .left {
+      width: 28%;
+      height: 100%;
+      padding: 5rem 3.5rem;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      // left-content
+      > .left-content {
+        position: relative;
+        top: 0;
+
+        // header
+        > header {
+          //  a
+          > a {
+            // img
+            > img {
+              width: 80%;
+            } // img end
+          }
+          // h1 title
+          > h1 {
+            margin: 2rem 0 1rem;
+          } // h1 title end
+
+        } // header end
+
+        // footer
+        > .footer {
+          // links
+          > .links {
+            font-size: 5rem;
+            color: #efefef;
+            padding: 1.8rem;
+            .border-radius(50%);
+            display: inline-block;
+            background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+            -webkit-animation: shadow 2s ease 0s infinite alternate;
+            -o-animation: shadow 2s ease 0s infinite alternate;
+            animation: shadow 2s ease 0s infinite alternate;
+            .transition(all, .4s, ease);
+            cursor: pointer;
+          } // links end
+          > .links:hover {
+            .rotate(180deg);
+          }
+
+          // footer
+          > .footer-copy {
+            color: #666;
+            margin: 2rem 0;
+            > p {
+              margin: 1rem 0;
+            }
+            a {
+              color: #333;
+            }
+          }// footer end
+
+        } // footer end
+
+      } // left-content end
+
+    } // left end
+
+    // right
+    > .right {
+      width: 72%;
+      float: right;
+    } // right end
+  }  // container end
+
+}
+
+@keyframes shadow {
+  from {
+    .box-shadow(2rem, #c0c0c0);
+  }
+  to {
+    .box-shadow(5rem, #c0c0c0);
+  }
+}
