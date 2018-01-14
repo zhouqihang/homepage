@@ -1,2 +1,2 @@
-import '../common/js/index';
-import '../common/style/index.less';
+import '../common/js/index.js';
+import './index.less';
