@@ -11,7 +11,9 @@ module.exports = {
             filename: 'index.html',
             // 文件参数
             params: [
-                { key: 'title', value: '周启航个人博客' }
+                { key: 'title', value: '启航-去远方' },
+                { key: 'blogTitle', value: '启航-去远方' },
+                { key: 'jquery', value: 'https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js' }
             ],
             // 引用打包文件
             chunks: ['index']
@@ -21,7 +23,9 @@ module.exports = {
             template: './src/article/index.html',
             filename: 'article.html',
             params: [
-                { key: 'title', value: '文章详情' }
+                { key: 'title', value: '文章详情' },
+                { key: 'blogTitle', value: '启航-去远方' },
+                { key: 'jquery', value: 'https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js' }
             ],
             chunks: ['article']
         }

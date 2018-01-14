@@ -27,7 +27,11 @@
                     <!--image icon end-->
 
                     <!--h1 title-->
-                    <h1><a href="javascript:;">周启航博客</a></h1>
+                    <h1>
+                        <a href="javascript:;">
+                            <%= htmlWebpackPlugin.options.blogTitle %>
+                        </a>
+                    </h1>
                     <!--h1 title end-->
 
                     <!--contact-->
@@ -225,6 +229,7 @@
     <!--icon font-->
     <script src="//at.alicdn.com/t/font_tpmurnt2p7lanhfr.js"></script>
     <!--jquery-->
+    <script src="<%= htmlWebpackPlugin.options.jquery %>"></script>
 </body>
 
 </html>

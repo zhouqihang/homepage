@@ -11,8 +11,6 @@
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
-    <!--self style-->
-    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -23,11 +21,17 @@
             <div class="left-content">
                 <header>
                     <!--image icon-->
-                    <img class="img-circle" src="images/icon1.png" alt="icon">
+                    <a href="javascript:;">
+                    <img class="img-circle" src="<%= require('../assets/images/index.js').logo %>" alt="icon">
+                </a>
                     <!--image icon end-->
 
                     <!--h1 title-->
-                    <h1>周启航博客</h1>
+                    <h1>
+                        <a href="javascript:;">
+                            <%= htmlWebpackPlugin.options.blogTitle %>
+                        </a>
+                    </h1>
                     <!--h1 title end-->
 
                     <!--contact-->
@@ -197,9 +201,7 @@
 
     <script src="//at.alicdn.com/t/font_tpmurnt2p7lanhfr.js"></script>
     <!--jquery-->
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <!--self script-->
-    <script src="js/index.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.jquery %>"></script>
 </body>
 
 </html>
