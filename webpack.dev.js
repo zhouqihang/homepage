@@ -6,6 +6,12 @@ module.exports = merge(common, {
     devtool: 'inline-source-map',
     // webpack-dev-server,用于热更新
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        proxy: {
+            '/star': {
+                target: 'http://homestead.zhouqihang.com',
+                changeOrigin: true
+            }
+        }
     },
 })
