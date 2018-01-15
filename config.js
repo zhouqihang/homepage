@@ -16,7 +16,7 @@ module.exports = {
                 { key: 'jquery', value: 'https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js' }
             ],
             // 引用打包文件
-            chunks: ['index']
+            chunks: ['vendor', 'index']
         },
         article: {
             entry: './src/article/index.js',
@@ -27,7 +27,7 @@ module.exports = {
                 { key: 'blogTitle', value: '启航-去远方' },
                 { key: 'jquery', value: 'https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js' }
             ],
-            chunks: ['article']
+            chunks: ['vendor', 'article']
         }
     },
     // 输出配置

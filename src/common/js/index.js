@@ -77,27 +77,4 @@ $(function() {
             });
         }
     });
-
-
-    // 点赞动画
-    var $starHandle = $('#star-handle'),
-        $star = $('#star'),
-        hasStard = false;
-    $starHandle.on('click', function() {
-        //281
-        if (!hasStard) {
-            axios.post('/star/281').then(res => {
-                hasStard = true;
-            }).catch(err => {
-                // nothing...
-            })
-        }
-        if ($star.isStared) {
-            $star.removeClass('stared star-end');
-            $star.isStared = false;
-        } else {
-            $star.addClass('stared star-end');
-            $star.isStared = true;
-        }
-    });
 });
