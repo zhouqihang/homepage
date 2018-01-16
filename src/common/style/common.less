@@ -98,6 +98,24 @@ a {
   }
 }
 
+#star {
+  width: 24px;
+  height: 28px;
+  display: inline-block;
+  background-image: url(../../assets/images/steps_praised.png);
+  background-repeat: no-repeat;
+  .background-size(483px, 28px);
+  cursor: pointer;
+}
+
+.star.star-end {
+  background-position: -460px, 0;
+}
+
+.star.stared {
+  animation: star .5s steps(21) normal 0s;
+}
+
 @keyframes star {
   from {
     background-position: 0, 0;
